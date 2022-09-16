@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<head>
+  <title>Registration Form </title>
+<!-- <link rel="stylesheet" href="form.js"> -->
+</head>
+<style>
+  .container {
+    width: 500px;
+    height: 300px;
+    border-radius: 7px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    font-family: calibri;
+    font-size: 120%;
+    font-weight: bolder;
+    box-shadow: 6px 6px 30px black(99, 98, 100);
+  }
+  #title {
+    background-color: rgb(245, 113, 56);
+    color:black;
+    border: 1px solid black;
+    padding-bottom: -1px;
+    height: 28px;
+    border-radius: 3px;
+  }
+  input#name,
+  input#email,
+  input#password,
+  input#dob {
+    height: 20px;
+    width: 100%;
+  }
+  #submit {
+    background-color:black;
+    height: 40px;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 105%;
+    margin-top: 20px;
+  }
+</style>
+<body bgcolor="thistle">
+  <center>
+    <form id="user-form">
+      <fieldset class="container">
+        <legend id="title">Registration Form</legend>
+        <table cellspacing="5" cellpadding="5">
+          <tr>
+            <td><label for="name">Name </label></td>
+            <td><input type="text" id="name" name="nm" placeholder="FirstName" /></td>
+            <td><input type="text" id="name" name="nm" placeholder="LastName" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email ID </label></td>
+            <td><input type="email" id="email" name="em" /></td>
+            <td><input type="email" id="email" name="em" required /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password </label></td>
+            <td><input type="password" id="password" name="pass" /></td>
+            <td>
+              <input type="password" id="password" name="pass" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date Of Birth </label></td>
+            <td><input type="date" id="dob" name="DOB" /></td>
+            <td><input type="date" id="dob" name="DOB" required /></td>
+          </tr>
+          <tr>
+            <td align="right">
+            </td>
+            </tr>
+    <h2>User Entries</h2>
+    <div id="user-entries"></div>
+  </center>
+</table>
+<button id="submit">submit</button>
+</body>
+</html>
